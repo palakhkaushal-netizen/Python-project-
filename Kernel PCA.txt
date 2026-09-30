@@ -1,0 +1,18 @@
+Kernel PCA
+from sklearn.decomposition import KernelPCA
+kpca = KernelPCA(n_components=2, kernel=&#39;rbf&#39;, gamma=15)
+X_train = kpca.fit_transform(X_train)
+X_test = kpca.transform(X_test)
+---------------------------------------------------------------------------------------------
+The below code for Reference for Kernal PCA
+from sklearn.decomposition import KernelPCA
+kpca = KernelPCA(
+n_components=2,
+kernel=&#39;rbf&#39;, # &#39;linear&#39; | &#39;poly&#39; | &#39;rbf&#39; | &#39;sigmoid&#39; | &#39;cosine&#39; | &#39;precomputed&#39;
+gamma=15, # used by &#39;rbf&#39;, &#39;poly&#39;, &#39;sigmoid&#39;
+degree=3, # used by &#39;poly&#39;
+coef0=1 # used by &#39;poly&#39;, &#39;sigmoid&#39;
+)
+X_train = kpca.fit_transform(X_train)
+
+X_test = kpca.transform(X_test)
