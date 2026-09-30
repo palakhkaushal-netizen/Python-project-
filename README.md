@@ -1,5 +1,6 @@
 # Python-project-
-University project
+Code-
+
 import numpy as np
 import pandas as pd
 
@@ -73,3 +74,36 @@ print("\nF1 Score : {:.4f}".format(f1_score(y_test, y_pred, average='weighted'))
 
 print("\nClassification Report:\n")
 print(classification_report(y_test, y_pred))
+
+
+Algorithms used -
+
+9. XGBoost
+from xgboost import XGBClassifier
+classifier = XGBClassifier()
+classifier.fit(X_train, y_train)
+y_pred = classifier.predict(X_test)
+
+11. LightGBM
+from lightgbm import LGBMClassifier
+classifier = LGBMClassifier()
+classifier.fit(X_train, y_train)
+y_pred = classifier.predict(X_test)
+
+13. CatBoost
+from catboost import CatBoostClassifier
+classifier = CatBoostClassifier()
+classifier.fit(X_train, y_train)
+y_pred = classifier.predict(X_test)
+
+15. AdaBoost
+from sklearn.ensemble import AdaBoostClassifier
+classifier = AdaBoostClassifier()
+classifier.fit(X_train, y_train)
+y_pred = classifier.predict(X_test)
+
+17. k-Nearest Neighbors
+from sklearn.neighbors import KNeighborsClassifier
+classifier = KNeighborsClassifier(n_neighbors=5)
+classifier.fit(X_train, y_train)
+y_pred = classifier.predict(X_test)
