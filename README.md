@@ -194,6 +194,17 @@ project/
 This is a suggested structure, not a listing of files confirmed to
 exist.
 
+## Current Repository Structure (organized)
+
+```text
+Python-project-/
+├── README.md
+├── code/        # root-level .py files
+├── data/        # Kernel_PCA_ML_Experiment_Sheet_Final.xlsx
+├── documents/   # Kernel PCA.txt
+└── images/      # root-level .png experiment screenshots
+```
+
 ## Running the Project
 
 The exact command depends on the Python script in the repository. Open
