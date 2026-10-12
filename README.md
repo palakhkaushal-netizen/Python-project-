@@ -202,7 +202,7 @@ Python-project-/
 ├── code/        # root-level .py files
 ├── data/        # Kernel_PCA_ML_Experiment_Sheet_Final.xlsx
 ├── documents/   # Kernel PCA.txt
-└── images/      # root-level .png experiment screenshots
+└── PNG/         # root-level .png experiment screenshots
 ```
 
 ## Running the Project
